@@ -12,4 +12,4 @@ conda skeleton pypi --manual-url https://github.com/qiime2/qiime2/archive/2017.2
 cd qiime2
 conda build . -c qiime2 --python 3.5 --output-folder ../
 cd -
-echo "DONE!"
+echo "It worked!"
