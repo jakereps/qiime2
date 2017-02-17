@@ -4,10 +4,10 @@ platform: linux
 image_resource:
   type: docker-image
   source:
-    repository: pacur/ubuntu-trusty 
+    repository: continuumio/miniconda 
 
 inputs:
-- name: controller 
+- name: controller
 
 run:
-  path: controller/ci/scripts/build 
+  path: controller/ci/scripts/build
