@@ -5,7 +5,7 @@ set -e -u -x
 curl https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh > miniconda.sh
 chmod +x miniconda.sh
 ./miniconda.sh -b
-export PATH=/home/travis/miniconda3/bin:$PATH
+export PATH=/miniconda3/bin:$PATH
 conda install conda-build --yes
 conda skeleton pypi --manual-url https://github.com/qiime2/qiime2/archive/2017.2.0.zip
 cd qiime2
