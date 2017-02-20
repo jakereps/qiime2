@@ -1,0 +1,13 @@
+---
+platform: darwin
+
+image_resource:
+  type: docker-image
+  source:
+    repository: continuumio/miniconda3
+
+inputs:
+- name: controller
+
+run:
+  path: controller/ci/scripts/build
